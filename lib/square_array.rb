@@ -1,11 +1,17 @@
 def square_array(array)
   squared = []
-count = 0
-  while count < array.size do
-    squared << (array[count] ** 2)
-    count = count + 1
+    array.length.times do |index|
+      squared.push(array[index] ** 2)
   end
   squared
 end
 
 
+def square_array(array)
+  new_array = []
+  
+  array.length.times do |index|
+  new_array.push(array[index] ** 2)
+  end
+new_array
+end
